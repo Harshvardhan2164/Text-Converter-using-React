@@ -18,10 +18,6 @@ export default function Navbar(props) {
           <a className="nav-link" href="/">{props.aboutText}</a>
         </li>
       </ul>
-      {/* <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-primary" type="submit">Search</button>
-      </form> */}
       <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
         <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault"/>
         <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
@@ -39,5 +35,5 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
     title:"My Website",
-    aboutText:"About TextUtils",
+    aboutText:"About Text Converter",
 }
