@@ -1,7 +1,5 @@
-// import logo from './logo.svg';
 import React ,{ useState } from 'react';
 import './App.css';
-// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
@@ -34,13 +32,10 @@ function App() {
   }
   return (
     <>
-    {/* <Navbar title="TextUtils" aboutText="About TextUtils"/> */}
-    {/* <Navbar/> */}
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+    <Navbar title="Text Converter" mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
     <div className="container">
     <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} toggleMode={toggleMode}/>
-    {/* <About/> */}
     </div>
     </>
   );
